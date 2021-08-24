@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+  tgbot:
+    container_name: bot
+    build: .
+    volumes:
+      - .:/src
+    command: python main.py
+    restart: always
+    network_mode: "host"
+#     links:
+#       - db
+#       - phpmyadmin
+volumes:
+  dbdata:

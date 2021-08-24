@@ -9,4 +9,6 @@ class InputData(StatesGroup):
     contact2 = State()
     contact3 = State()
     search = State()
-    # S3 = State()s
+
+class Passwords(StatesGroup):
+    password = State()
