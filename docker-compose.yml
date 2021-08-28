@@ -10,8 +10,6 @@ services:
     command: python main.py
     restart: always
     network_mode: "host"
-#     links:
-#       - db
-#       - phpmyadmin
-volumes:
-  dbdata:
+    env_file:
+      - ".env"
+

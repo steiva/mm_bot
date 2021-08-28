@@ -1,3 +1,5 @@
 python-dotenv
 asyncpg
 aiogram
+gspread
+oauth2client
